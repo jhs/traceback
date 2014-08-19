@@ -59,16 +59,16 @@ test('Stack trace formatting', function(t) {
 
   t.equal(internal_format, native_format, 'Identical stack trace formatting between native and builtin')
 
-  console.error(native_format)
-  console.error('- vs. -')
-  console.error(internal_format)
+  //console.error(native_format)
+  //console.error('- vs. -')
+  //console.error(internal_format)
 
   t.end()
 
   function fix(stack) {
     var filename = __filename.replace(/\./g, '\\.').replace(/\//g, '\\/')
     var different_calls = new RegExp('at Test\\.<anonymous> \\(' + filename + ':\\d+:\\d+\\)')
-    console.error(different_calls)
+    //console.error(different_calls)
     return stack.split(/\n/).map(function(line) {
       //console.error('-> ' + line)
       return different_calls.test(line)
