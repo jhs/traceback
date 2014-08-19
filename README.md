@@ -65,14 +65,18 @@ They also work correctly in `JSON.stringify()`.
 
 ## Tests
 
-Tests use [node-tap][tap]. If you clone this Git repository, tap is included.
+Tests use [node-tap][tap]. Clone this Git repository, run `npm install` and then run the tests through npm:
 
-    $ tap test
-    ok test/api.js ...................................... 286/286
-    ok test/fail.js ....................................... 35/35
-    ok test/format.js ....................................... 6/6
-    ok test/readme.js ....................................... 1/1
-    total ............................................... 332/332
+    $ npm test
+
+    > traceback@0.3.1 test /Users/jhs/src/traceback
+    > tap test/
+
+    ok test/api.js ...................................... 326/326
+    ok test/fail.js ....................................... 36/36
+    ok test/format.js ....................................... 7/7
+    ok test/readme.js ....................................... 2/2
+    total ............................................... 371/371
 
     ok
 
