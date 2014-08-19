@@ -11,7 +11,7 @@ Error.stackTraceLimit = 100
 
 test('Stack trace formatting', function(t) {
   var v8_version = process && process.versions && process.versions.v8
-  if(v8_version != '3.6.6.8')
+  if(v8_version != '3.14.5.9')
     console.error('Inexact V8 version match')
 
   var start = function() { obj.foo() }
